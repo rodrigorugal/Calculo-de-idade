@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.fundo {
+  background-color: #313131;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caixa_central {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #c05a57;
+  padding: 15px;
+  width: 90%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.caixa_central_resposta {
+  background-color: #1f1f1f;
+  background-image: linear-gradient(
+    150deg,
+    #1f1f1f 5%,
+    #322f2f 19%,
+    #533a3a 39%,
+    #7e4040 60%,
+    #974e4e 80%,
+    #c05a57 100%
+  );
+  border-radius: 10px;
+  height: 45%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#central_resposta {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+#caixa_central_inferior {
+  background-color: #1f1f1f;
+  background-image: linear-gradient(
+    150deg,
+    #c05a57 5%,
+    #974e4e 19%,
+    #7e4040 39%,
+    #533a3a 60%,
+    #322f2f 80%,
+    #1f1f1f 100%
+  );
+  border-radius: 10px;
+  height: 45%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#caixa_central_inferior button {
+  color: #1f1f1f;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: normal;
+  text-transform: uppercase;
+
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+}
+#caixa_central_inferior input {
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  color: #1f1f1f;
+}
+#caixa_central_inferior label {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 600px) {
+  .caixa_central {
+    max-width: 660px;
+  }
+
+  #caixa_central_inferior button:hover {
+    background-color: #1f1f1f;
+    color: #fff;
+  }
+  #caixa_central_inferior button:active {
+    box-sizing: content-box;
+    background-color: #fff;
+    border: 3px solid #1f1f1f inset;
+    /*box-shadow: 0 0 5px #1f1f1f inset;*/
+    color: #1f1f1f;
+  }
+}
